@@ -1,0 +1,43 @@
+
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+
+  <body class="text-center">
+  <link href="{{ url_for('static', filename='css/singin.css')}}" rel="stylesheet">
+    <form class="form-signin" method="post">
+  <img class="mb-4" src="{{ url_for('static', filename='img/logo.jpeg')}}" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">sign in</h1>
+
+  <input type="text" id="email" name="email" class="form-control" placeholder="email" required autofocus>
+
+  <input type="password" id="Password" name="password" class="form-control" placeholder="Password" required>
+  <div class="checkbox mb-3">
+    <label>
+      <a class="nav-link" href="/login">Customer Login Click Here</a>
+    </label>
+    <label>
+      <a class="nav-link" href="/venregistration">Sign Up Here</a>
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+  <p class="mt-5 mb-3 text-muted">&copy; Gadgets.com 2019-2020</p>
+</form>
+</body>
+
+

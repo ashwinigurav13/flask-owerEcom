@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block body %}
+		<!-- BREADCRUMB -->
+		<div id="breadcrumb" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="breadcrumb-header">Checkout</h3>
+						<ul class="breadcrumb-tree">
+							<li><a href="#">Home</a></li>
+							<li class="active">Checkout</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /BREADCRUMB -->
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<!--<div class="row">-->
+					<form action="/chk" enctype="multipart/form-data" method="POST">
+						<div class="form-group" >
+						<input class="input" type="text" id="firstname" name="firstname" placeholder="First Name">
+						</div>
+						<div class="form-group">
+							<input class="input" type="text" name="lastname" id="lastname" placeholder="Last Name">
+						</div>
+						<div class="form-group">
+							<input class="input" type="email" id="email" name="email" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<input class="input" type="text" id="address" name="address" placeholder="Address">
+						</div>
+						<div class="form-group">
+							<input class="input" type="text" id="city" name="city" placeholder="City">
+						</div>
+						<div class="form-group">
+							<input class="input" type="text" id="country" name="country" placeholder="Country">
+						</div>
+						<div class="form-group">
+							<input class="input" type="text" id="zipcode" name="zipcode" placeholder="ZIP Code">
+						</div>
+						<div class="form-group">
+							<input class="input" type="tel" id="tel" name="tel" placeholder="Telephone">
+						</div>
+						<button type="submit">Place order</button>
+						<!--<a  class="primary-btn order-submit">Place order</a>-->
+					</form>
+				<!--</div>-->
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+{% endblock %}

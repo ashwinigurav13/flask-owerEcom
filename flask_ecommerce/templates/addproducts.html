@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>AProduct</title>
+		<link rel= "stylesheet" type= "text/css" href= "static/css/styleaddproduct.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	</head>
+	<body>
+		<div class="register">
+			<h1>Add Product</h1>
+			<form method="post" action="/addproduct" enctype="multipart/form-data" >
+				<label for="subcat_id">
+					<i class="fas fa-cube"></i>
+				</label>
+				<input type="text" name="subcat_id" placeholder="subcat_id" id="subcat_id" required>
+
+				<label for="prod_name">
+					<i class="fas fa-bars"></i>
+				</label>
+				<input type="text" name="prod_name" placeholder="Product Name" id="prod_name" required>
+				<label for="prod_desc">
+					<i class="fas fa-bars"></i>
+				</label>
+				<input type="text" name="prod_desc" placeholder="Description" id="prod_desc" required>
+				<label for="prod_price">
+					<i class="fas fa-money-bill-alt"></i>
+				</label>
+				<input type="text" name="prod_price" placeholder="price" id="prod_price" required>
+				<label for="prod_qty">
+					<i class="fas fa-cubes"></i>
+				</label>
+				<input type="text" name="prod_qty" placeholder="Quantity" id="prod_qty" required>
+
+				<label for="prod_brand">
+					<i class="fas fa-trademark"></i>
+				</label>
+				<input type="text" name="prod_brand" placeholder="brand" id="prod_brand" required>
+
+				<input type="file" name="file" placeholder="file" id="file" required>
+				<input type="submit" id="addproduct" value="Add Product">
+			</form>
+		</div>
+			</body>
+</html>
